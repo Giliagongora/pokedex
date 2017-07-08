@@ -1,0 +1,30 @@
+/* nav bar */
+
+/* section-one */
+.section-one h1{
+	color: red;
+	padding-bottom: 3%;
+}
+.section-one input{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	width: 91%;
+	color: black;
+}
+.section-one .fa{
+	font-size: 150%;
+}
+.section-one p{
+	background-color: green;
+	padding-right: 3%;
+	padding-left: 3%;
+	color: white;
+}
+.section-one{
+	padding-bottom: 4%;
+}
+
+.section-two .pokprint{
+	background-color: blue;
+}
