@@ -10,16 +10,19 @@ $(document).ready(function() {
         //limito los elementos llamados
         data: {"limit": '811'},
     })
-    
+
     .done(function(res) {
         console.log("success");
         console.log(res);
         //el for recorre todas las imagenes 
         for (var i = 1; i < 719; i++) {
         	//las imagenes de la api son recorridas por el for
-            var pokeimg = $("<img src=https://pokeapi.co/media/img/" + i + ".png id=" + i + ">");
+            var pokeimg = $("<a type='button'  data-toggle='modal' data-target='#myModal'> <img src=https://pokeapi.co/media/img/" + i + ".png id=" + i + "> </a>");
+            //<button type="button" class="btn btn btn-lg" data-toggle="modal" data-target="#myModal">  <img id="element" src="" alt="">  </button>
+
             //finalmente le doy un append que permite que se imprima en el navegador
             $("div.pokemons").append(pokeimg);
+
         }
     })
     .fail(function() {
